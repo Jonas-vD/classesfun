@@ -1,0 +1,84 @@
+@use "./base/mixins" as *;
+@use "./base/variables" as *;
+@use "./base/reset";
+@use "./base/fonts";
+@use "../icons/style.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+.menu{
+  width: 420px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  .count{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.8rem;
+  }
+  .knoppen{
+    margin-top: 40px;
+    button{
+      color: white;
+      border-radius: 5px;
+      padding:10px 50px;
+      border: 1px solid white;
+    }
+    .startknop{
+      background-color: green;
+      &:hover{
+        background-color: darkgreen;
+      }
+    }
+    .stopknop{
+      background-color: red;
+      &:hover{
+        background-color: darkred;
+      }
+    }
+    .resetknop{
+      background-color:white;
+      color: black;
+      &:hover{
+        background-color: lightgray;
+      }
+    }
+  }
+  
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.circle,.square{
+  position: absolute;
+}
+
+// .message{
+//   position: absolute;
+  
+//   text-align: center;
+//   left: calc(50% - 125px);
+//   top: calc(50% - 25px);
+//   color: red;
+//   font-size: 5rem;
+// }
+
+
+
+
+
+
